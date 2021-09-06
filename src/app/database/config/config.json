@@ -1,0 +1,28 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "node_api",
+    "host": "db",
+    "dialect": "postgres",
+	"logging": false,
+    "define": {
+      "timestamps": true
+   },
+   "timezone":"-03:00"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

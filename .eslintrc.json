@@ -1,0 +1,117 @@
+{
+    "env": {
+        "node": true,
+        "commonjs": true,
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-var": [
+            "error"
+        ],
+        "keyword-spacing": [
+            "error"
+        ],
+        "arrow-spacing": [
+            "error"
+        ],
+        "comma-spacing": [
+            "error"
+        ],
+        "object-curly-spacing":[
+            "error",
+            "always"
+        ],
+        "no-trailing-spaces":[
+            "error"
+        ],
+        "no-console": [
+            "error"
+        ],
+        "padding-line-between-statements": [
+            "error",
+            { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*"},
+            { "blankLine": "any",    "prev": ["const", "let", "var"], "next": ["const", "let", "var"]}
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {"max": 1, "maxEOF": 0}
+        ],
+        "no-lone-blocks": [
+            "error"
+        ],
+        "no-lonely-if": [
+            "error"
+        ],
+        "space-before-blocks": [
+            "error"
+        ],
+        "brace-style": [
+            "error",
+            "1tbs",
+            { "allowSingleLine": true }
+        ],
+        "no-empty-function": [
+            "error"
+        ],
+        "prefer-const": [
+            "error"
+        ],
+        "no-use-before-define": [
+            "error"
+        ],
+        "arrow-parens": [
+            "error"
+        ],
+        "no-unused-vars": [
+            "error",
+            { "args": "after-used" }
+        ],
+        "key-spacing": [
+            "error",
+            {
+                "beforeColon": false,
+                "afterColon": true
+            }
+        ],
+        "default-param-last": [
+            "error"
+        ],
+        "object-property-newline": [
+            "error"
+        ],
+        "object-curly-newline": [
+            "error",
+            { "multiline": true }
+        ],
+        "function-call-argument-newline": [
+            "error",
+            "never"
+        ],
+		"eol-last": [
+			"error",
+			"always"
+		]
+    }
+}
