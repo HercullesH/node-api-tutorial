@@ -16,6 +16,10 @@ base url: `http://localhost:3000/api/users`
 `docker-compose build`
 `docker-compose up`
 
+## Config .env
+
+Create a file  `.env` using the fields like `.env.example`
+
 ## Config database
 
 Connect to the postgres from your machine and run `CREATE DATABASE node_api`
