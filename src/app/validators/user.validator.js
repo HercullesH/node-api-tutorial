@@ -19,7 +19,7 @@ class UserValidator {
 
 	updatePassword() {
 		return [
-			body('oldPassword', ErrorMessage.validatorMessage('userName')).exists().bail().isString(),
+			body('oldPassword', ErrorMessage.validatorMessage('Senha Atual')).exists().bail().isString(),
 			body('password', ErrorMessage.validatorMessage('Senha')).exists().bail().isString()
 		];
 	}
@@ -32,7 +32,7 @@ class UserValidator {
 
 	destroy() {
 		return [
-			param('id', ErrorMessage.validatorMessage('ID')).exists()
+			param('id', ErrorMessage.validatorMessage('ID')).exists().bail().isInt()
 		];
 	}
 }

@@ -22,7 +22,7 @@ class HandleError {
 	static handle404Error(req, res) {
 
 		res.status(404);
-		res.json(['Não encontrado']);
+		res.json(['Não encontrado 1']);
 	}
 }
 

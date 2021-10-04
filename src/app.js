@@ -18,7 +18,7 @@ class App {
 		this.app.use(HandleError.handle404Error);
 
 		// eslint-disable-next-line no-console
-		this.app.listen(3000, () => { console.log('running'); });
+		this.app.listen(3000, () => { console.log('runninggg '); });
 	}
 }
 
