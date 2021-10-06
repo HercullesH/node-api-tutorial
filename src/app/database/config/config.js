@@ -1,12 +1,13 @@
 const { config } = require('dotenv');
+
 config();
 
 const connection = {
 	development: {
-		username: 'nodeadmin@nodesqlkeyrus',
-		password: '@Postgres',
-		database: 'node_api',
-		host: 'nodesqlkeyrus.postgres.database.azure.com',
+		username: process.env.DB_USER,
+		password: process.env.DB_PASS,
+		database: process.env.DB_NAME,
+		host: process.env.DB_HOST,
 		dialect: 'postgres',
 		logging: false,
 		define: {

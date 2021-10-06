@@ -14,4 +14,3 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
     && rm dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
 CMD dockerize -wait tcp://db:5432 -timeout 60m npm run dev
-

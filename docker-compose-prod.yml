@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  node:
+    container_name: node-api
+    build: .
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+    env_file:
+      - .env
